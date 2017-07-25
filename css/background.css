@@ -1,0 +1,58 @@
+
+
+.wrapper {
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 900px;
+	max-width: 1300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.flex-wrapper {
+	display: -webkit-flex;
+	display: flex;
+}
+.nav-md {
+	background: #fff;
+}
+.profile {
+	text-align: center;
+}
+
+.menu_section {
+	margin-bottom: 0 !important;
+}
+.serviceAll {
+	flex: 1;
+}
+.selects {
+	height: 30px;
+	width: 170px;
+	text-align: center;
+}
+.addservice {
+	text-align: center;
+	padding: 15px 0;
+}
+.wr {
+	margin-top: 10px;
+}
+.wr1 {
+	margin-top: 15px;
+}
+.paging-cen {
+	text-align: center;
+}
+.btn-col2 {
+	margin-top: 10px;
+}
+.add {
+	margin-left: 90px;
+}
+.modal-dialog {
+	margin-top: 15em;
+}
+.declar-txt {
+	display: inline-block !important;
+	width: 160px;
+}
