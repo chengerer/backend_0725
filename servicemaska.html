@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/background.css" />
+		<link rel="stylesheet" href="css/palmshop.css" />
+		<title>服务管理</title>
+	</head>
+
+	<body class="nav-md">
+		<!--弹出框-->
+		<!--新增页面-->
+		<div class="mask">
+			<div id="CalenderModalEdit1"  class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel2">新增服务详情</h4>
+						</div>
+
+						<div class="flex-wrapper">
+							<div class="serviceAll addservice">
+								<form action="" method="post">
+									服务名称：<input class="declar-txt" type="text" />
+								</form>
+								<div class="wr">
+									<span class="service1">服务类型：</span>
+									<select class="selects">
+										<option value="volvo">Volvo</option>
+										<option value="saab">Saab</option>
+										<option value="opel">Opel</option>
+										<option value="audi">Audi</option>
+									</select>
+								</div>
+
+							</div>
+							<div class="serviceAll">
+								<div class="wr1">
+									<span class="service1">服务类型：</span>
+									<select class="selects">
+										<option value="volvo">Volvo</option>
+										<option value="saab">Saab</option>
+										<option value="opel">Opel</option>
+										<option value="audi">Audi</option>
+									</select>
+								</div>
+								<form class="wr" action="" method="post">
+									上传图片：<input class="declar-txt" type="file" />
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								服务详情：
+							</div>
+							<div class="col-xs-8">
+								<textarea class="form-control" name="" rows="5" cols=""></textarea>
+							</div>
+						</div>
+
+						<div class="modal-footer">
+							<input class="btn-col2 declar-btn" type="button" value="提交" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$(function() {
+//				$(".btn1, .btn2").on('click', function() {
+//					$("#CalenderModalEdit1").modal('show');
+//				});
+//			});
+		</script>
+	</body>
+
+</html>
