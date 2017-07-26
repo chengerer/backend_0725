@@ -42,22 +42,8 @@
 .add {
 	margin-left: 90px;
 }
-/*.modal-dialog {
-	margin-top: 15em;
-}*/
-.declar-txt {
-	display: inline-block !important;
-	width: 160px;
-}
-.modal-content {
-	margin-top: 200px;
-}
-
 
 /*新增*/
-.declar-txt {
-	padding-left: 5px;
-}
 .service1 {
 	padding-left: 16px;
 	margin-left: -8px;
@@ -81,23 +67,24 @@
 }
 .declar-txt {
 	width: 200px;
-	/*margin-left: 8px;*/
 }
 .ch_init {
 	margin-left: 14px;
 }
-.modal-dialogadd {
-width: 800px;	
-}
-.modal-dialogadd1 {
+.modal-dialog {
+	height: 350px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 	width: 1000px;
 }
 .addlf {
 	margin-left: 10px;
 }
-.row {
-	margin-top: 50px;
-}
 .wr {
 	margin-top: 30px;
 }
+

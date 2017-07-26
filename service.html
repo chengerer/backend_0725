@@ -196,57 +196,63 @@
 						</nav>
 					</div>
 					<!--中间部分-->
-					<div class="col-xs-9">
+					<div class="col-xs-11">
 						<button class="btn btn-col2 btn1" type="button">新增</button>
 						<button class="btn btn-col2 btn2" type="button">编辑</button>
 						<button class="btn btn-col2" type="button">删除</button>
 						<button class="btn btn-col2" type="button">上线</button>
 						<button class="btn btn-col2" type="button">下线</button>
 
-						<div class="shop-right1">
+						<div class="shop-right1 form-horizontal">
 							<p class="news-p">服务查询</p>
-							<div class="flex-wrapper">
-								<div class="serviceAll addservice">
-									<div>
-										<span class="service1">服务状态：</span>
-										<select class="selects">
+							<div class="row service-main">
+								<form class="form-horizontal">
+									<div class="col-xs-4 form-group">
+										<label class="col-xs-4 control-label">服务状态：</label>
+										<div class="col-xs-8">
+											<select class="form-control">
+												<option value="volvo">Volvo</option>
+												<option value="saab">Saab</option>
+												<option value="opel">Opel</option>
+												<option value="audi">Audi</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										<label class="col-xs-4 control-label">服务名称：</label>
+										<div class="col-xs-8">
+											<div class="form-group">
+												<input type="text" class="form-control" />
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4 form-group">
+										<label class="col-xs-4 control-label">服务类型：</label>
+										<div class="col-xs-8">
+											<select class="form-control">
 											<option value="volvo">Volvo</option>
 											<option value="saab">Saab</option>
 											<option value="opel">Opel</option>
 											<option value="audi">Audi</option>
 										</select>
+										</div>
 									</div>
-									<div class="wr">
-										<span class="service1">渠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;道：</span>
-										<select class="selects">
+									<div class="col-xs-4 form-group">
+										<label class="col-xs-4 control-label">渠道：</label>
+										<div class="col-xs-8">
+											<select class="form-control">
 											<option value="volvo">Volvo</option>
 											<option value="saab">Saab</option>
 											<option value="opel">Opel</option>
 											<option value="audi">Audi</option>
 										</select>
+										</div>
 									</div>
-								</div>
-								<div class="serviceAll addservice">
-									<form action="" method="post">
-										<span class="ch_init">服务名称：</span><input class="declar-txt" type="text" />
-									</form>
-								</div>
-								<div class="serviceAll">
-									<div class="wr1">
-										<span class="service1">服务类型：</span>
-										<select class="selects">
-											<option value="volvo">Volvo</option>
-											<option value="saab">Saab</option>
-											<option value="opel">Opel</option>
-											<option value="audi">Audi</option>
-										</select>
+									<div class="col-xs-4 col-xs-offset-4">
+										<input class="btn btn-col2 declar-btn pull-right" type="button" value="查询" />
+										<input class="btn btn-col2 declar-btn pull-right" type="button" value="重置" />
 									</div>
-									<p class="add">
-										<input class="btn-col2 declar-btn" type="button" value="查询" />
-										<input class="btn-col2 declar-btn" type="button" value="重置" />
-									</p>
-								</div>
-
+								</form>
 							</div>
 						</div>
 						<!--月度电量调整-->
@@ -255,7 +261,7 @@
 							<table class="table table-bordered">
 								<thead>
 									<tr>
-										<th></th>
+										<th><input type="checkbox" class="checkAll" value="" /></th>
 										<th>服务名称</th>
 										<th>服务类型</th>
 										<th>服务状态</th>
@@ -386,6 +392,9 @@
 						"backdrop": "static", // 点击遮罩是否能关闭 static不关闭  true可以关闭
 						"remote": "servicemaska.html", // 加载其他页面
 					});
+				});
+				$(".checkAll").on('click', function() {
+					$("input[type=checkbox]").prop("checked", this.checked);
 				});
 			});
 		</script>
