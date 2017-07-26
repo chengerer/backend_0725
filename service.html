@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/background.css" />
-		<link rel="stylesheet" href="css/palmshop.css" />
+		<link rel="stylesheet" href="css/palmshop1.css" />
 		<title>服务管理</title>
 	</head>
 
@@ -188,7 +188,7 @@
 								</li>
 								<li class="">
 									<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-										<span class="glyphicon glyphicon-off"></span>修改密码
+										<span class="glyphicon glyphicon-check"></span>修改密码
 									</a>
 								</li>
 
@@ -208,7 +208,16 @@
 							<div class="flex-wrapper">
 								<div class="serviceAll addservice">
 									<div>
-										<span class="service1">发布渠道：</span>
+										<span class="service1">服务状态：</span>
+										<select class="selects">
+											<option value="volvo">Volvo</option>
+											<option value="saab">Saab</option>
+											<option value="opel">Opel</option>
+											<option value="audi">Audi</option>
+										</select>
+									</div>
+									<div class="wr">
+										<span class="service1">渠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;道：</span>
 										<select class="selects">
 											<option value="volvo">Volvo</option>
 											<option value="saab">Saab</option>
@@ -218,19 +227,13 @@
 									</div>
 								</div>
 								<div class="serviceAll addservice">
-									<div>
-										<span class="service1">广告位：</span>
-										<select class="selects">
-											<option value="volvo">Volvo</option>
-											<option value="saab">Saab</option>
-											<option value="opel">Opel</option>
-											<option value="audi">Audi</option>
-										</select>
-									</div>
+									<form action="" method="post">
+										<span class="ch_init">服务名称：</span><input class="declar-txt" type="text" />
+									</form>
 								</div>
 								<div class="serviceAll">
 									<div class="wr1">
-										<span class="service1">发布状态：</span>
+										<span class="service1">服务类型：</span>
 										<select class="selects">
 											<option value="volvo">Volvo</option>
 											<option value="saab">Saab</option>
@@ -253,12 +256,10 @@
 								<thead>
 									<tr>
 										<th></th>
-										<th>序号</th>
-										<th>广告ID</th>
-										<th>广告名称</th>
-										<th>发布渠道</th>
-										<th>广告位</th>
-										<th>发布状态</th>
+										<th>服务名称</th>
+										<th>服务类型</th>
+										<th>服务状态</th>
+										<th>渠道名称</th>
 										<th>上线时间</th>
 										<th>累计点击量</th>
 									</tr>
@@ -272,24 +273,9 @@
 										<td></td>
 										<td></td>
 										<td></td>
-										<td></td>
-										<td></td>
 									</tr>
 									<tr>
 										<td><input type="checkbox" name="" id="" value="" /></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td><input type="checkbox" name="" id="" value="" /></td>
-										<td></td>
-										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -305,6 +291,13 @@
 										<td></td>
 										<td></td>
 										<td></td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="" id="" value="" /></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
 										<td></td>
 										<td></td>
 									</tr>
@@ -316,8 +309,6 @@
 										<td></td>
 										<td></td>
 										<td></td>
-										<td></td>
-										<td></td>
 									</tr>
 									<tr>
 										<td><input type="checkbox" name="" id="" value="" /></td>
@@ -327,13 +318,9 @@
 										<td></td>
 										<td></td>
 										<td></td>
-										<td></td>
-										<td></td>
 									</tr>
 									<tr>
 										<td><input type="checkbox" name="" id="" value="" /></td>
-										<td></td>
-										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -373,7 +360,7 @@
 						<!--弹出框-->
 						<!--新增页面-->
 						<div id="CalenderModalEdit1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
+							<div class="modal-dialog modal-dialogadd">
 								<div class="modal-content">
 								</div>
 							</div>
@@ -386,7 +373,7 @@
 			</div>
 		</div>
 
-		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/custom.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/fastclick.js" type="text/javascript" charset="utf-8"></script>

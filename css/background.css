@@ -25,17 +25,10 @@
 .serviceAll {
 	flex: 1;
 }
-.selects {
-	height: 30px;
-	width: 170px;
-	text-align: center;
-}
+
 .addservice {
 	text-align: center;
 	padding: 15px 0;
-}
-.wr {
-	margin-top: 10px;
 }
 .wr1 {
 	margin-top: 15px;
@@ -55,4 +48,56 @@
 .declar-txt {
 	display: inline-block !important;
 	width: 160px;
+}
+.modal-content {
+	margin-top: 200px;
+}
+
+
+/*新增*/
+.declar-txt {
+	padding-left: 5px;
+}
+.service1 {
+	padding-left: 16px;
+	margin-left: -8px;
+}
+.ll {
+	padding-left: 5px;
+}
+/*新增01*/
+.modal-footer {
+	margin-top: 26px;
+}
+.glyphicon-asterisk {
+	color: red;
+	font-size: 12px;
+	margin-right: 3px;
+}
+.selects {
+	height: 30px;
+	width: 200px;
+	text-align: center;
+}
+.declar-txt {
+	width: 200px;
+	/*margin-left: 8px;*/
+}
+.ch_init {
+	margin-left: 14px;
+}
+.modal-dialogadd {
+width: 800px;	
+}
+.modal-dialogadd1 {
+	width: 1000px;
+}
+.addlf {
+	margin-left: 10px;
+}
+.row {
+	margin-top: 50px;
+}
+.wr {
+	margin-top: 30px;
 }
